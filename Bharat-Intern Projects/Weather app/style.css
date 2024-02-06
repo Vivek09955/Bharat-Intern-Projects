@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    background: url("images/bg.jpg");
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 50px;
+    max-width: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bar {
+    margin: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.search_bar input {
+    height: 50px;
+    width: 280px;
+    font-size: medium;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.search_bar button{
+    border-radius: 100%;
+    border: 2px solid black;
+    height: 50px;
+}
+
+.search_bar .search img{
+    height: 25px;
+    width: 20px;
+    padding: 10px 15px;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temperature> :nth-child(1) {
+    width: auto;
+    height: 235px;
+    margin-top: -40px;
+}
+
+.temperature> :nth-child(2) {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    height: 110px;
+    margin-top: -20px;
+}
+
+.temperature> :nth-child(3) {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    height: 110px;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.box img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+.humidity, .wind {
+    display: flex;
+    margin: auto;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.box .text {
+    display: flex;
+    margin: auto;
+    color: white;
+    flex-direction: column;
+}
+
+.text> :nth-child(1) {
+    font-size: xx-large;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    color: yellow;
+    font-size: large;
+}

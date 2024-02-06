@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    overflow: hidden;
+}
+
+.main::before,
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-en-20240115-trifectadaily-perspective_alpha_website_large.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.main::before {
+    opacity: 0.25;
+}
+
+.main::after {
+    opacity: 0.25;
+}
+
+.main .down {
+    height: 612px;
+}
+
+nav {
+    position: relative;
+    max-width: 78vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+#img {
+    width: 150px;
+    height: auto;
+    color: rgb(237, 18, 10);
+    fill: currentColor;
+    display: block;
+}
+
+nav button {
+    height: 35px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    height: 35px;
+    width: 110px;
+    margin-right: 25px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-items: center;
+}
+
+.font {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 160px);
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#ln1 {
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 1000;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+#ln2 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#ln3 {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.mail-input {
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 8px;
+    width: 320px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    opacity: 0.7;
+    font-size: large;
+    font-weight: 500;
+    border: 1px solid white;
+}
+
+.start {
+    background-color: red;
+    color: white;
+    height: 59px;
+    padding: 8px 20px;
+    border: 0px solid;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.partition {
+    height: 8px;
+    width: 100%;
+    background-color: rgb(37, 34, 34);
+    position: relative;
+}
+
+.tv {
+    height: 580px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.text-part {
+    font-size: 48px;
+    color: white;
+}
+
+.img-part {
+    position: relative;
+}
+
+.img-part img {
+    position: relative;
+    width: 555px;
+    z-index: 1;
+}
+
+.img-part video {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+}
+
+.heading {
+    color: white;
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+.description {
+    color: white;
+    font-size: 22px;
+}
+
+.phone {
+    height: 580px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.phone .img-part img {
+    z-index: -1;
+}
+
+.phone .box {
+    background-color: black;
+    padding: 12px;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 0.49);
+    border-radius: 13px;
+    box-shadow: 0px -10px 10px rgba(36, 33, 33, 0.486);
+    height: 80px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.sec1 img {
+    height: 65px;
+    width: 57px;
+    z-index: 1;
+}
+
+.anime {
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.s-things {
+    font-size: large;
+    font-weight: 500;
+}
+
+.download {
+    font-size: 14px;
+    color: blue;
+}
+
+.sec2 img {
+    height: 60px;
+    width: auto;
+    top: 10%;
+}
+
+.monitor {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.monitor video {
+    top: 50px;
+    right: 100px;
+    position: absolute;
+    width: 360px;
+}
+
+.kids {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.faq .heading {
+    padding: 50px 0px 10px 0px;
+    text-align: center;
+}
+
+.faq-box {
+    padding: 5px;
+    height: 90px;
+    max-width: 76vw;
+    display: flex;
+    margin: auto;
+    background: none;
+    align-items: center;
+}
+
+.faq-box button {
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.faq-box :hover {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#fnt :nth-child(1) {
+    color: white;
+    font-size: 24px;
+    font-weight: 510px;
+}
+
+.faq-box svg {
+    filter: invert(1);
+    height: 40px;
+    width: 40px;
+}
+
+.faq p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 20px 20px 20px;
+}
+
+.faq .mail-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.container {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 70px 170px 70px 170px;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.container a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container-box p {
+    margin-right: 10px;
+}
+
+.first {
+    display: flex;
+    height: 50px;
+}
+
+.second {
+    display: inline-flex;
+    height: 180px;
+    flex-wrap: wrap;
+}
+
+.second a {
+    width: 294px;
+}
+
+.third {
+    display: flex;
+}
+
+.fourth {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
